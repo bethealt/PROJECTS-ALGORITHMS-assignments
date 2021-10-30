@@ -234,6 +234,7 @@ function finalCountdown(param1,param2,param3,param4)
       else if ( x % param1 == 0)
         {
           console.log(x);
+          
           x += param1 ;
         }
     }
