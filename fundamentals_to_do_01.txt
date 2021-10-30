@@ -168,17 +168,24 @@ Your function will be given an input parameter incoming. Please console.log this
 Whoa, That Sucker’s Huge… 
 Add odd integers from -300,000 to 300,000, and console.log the final sum. Is there a shortcut?
 
-    function hugeSucker() {
-        var total = 0;
-        var odd = [];
-        for (var x = -299,999; x < 300,001; x -= 2); {
-            var oddMore = odd.push(x);
+function hugeSucker() {
+    var total = 0;
+    var count = 0;
+    for (var x = -300000; x < 300000; x++) 
+    {
+        if (x % 2 == 1) {
+            
+            console.log(x);
+            total += x;
+            count += 1;
         }
-        for (i = 0; i < oddMore.length; i++){
-            total += oddMore[i];
-        }
-        return total;
     }
+    
+    console.log(total);
+    console.log(count);
+}
+
+hugeSucker();
  
 Countdown by Fours
 Log positive numbers starting at 2016, counting down by fours (exclude 0), without a FOR loop.
