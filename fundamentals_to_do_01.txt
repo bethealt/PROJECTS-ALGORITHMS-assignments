@@ -158,10 +158,12 @@ Print integers 1 to 100. If divisible by 5, print "Coding" instead. If by 10, al
 What Do You Know?
 Your function will be given an input parameter incoming. Please console.log this value.
 
-    function whatDoYouKnow(incoming) {
-        console.log(incoming)
+    function whatDoYouKnow(x) 
+    {
+        console.log(x);
     };
 
+    whatDoYouKnow("incoming");
  
 Whoa, That Sucker’s Huge… 
 Add odd integers from -300,000 to 300,000, and console.log the final sum. Is there a shortcut?
