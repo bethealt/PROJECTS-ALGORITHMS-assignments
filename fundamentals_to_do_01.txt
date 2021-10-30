@@ -112,7 +112,7 @@ multiple - the product result of one number multiplied by another number.
     for (var x = 515; x < 4095; x += 5) {
         if (x % 5 == 0) {
         console.log(x);
-        count += 1
+        count += 1;
         }
     }
         console.log(count);
@@ -121,16 +121,20 @@ multiple - the product result of one number multiplied by another number.
 Multiples of Six
 Print multiples of 6 up to 60,000, using a WHILE.
 
-    function multiplesofSix = {
-        var num = 1;
-        while (num < 10,001)
-        {
-            console.log(num * 6);
-            num += 1;
-        }
-        console.log("Whew, all multiples of 6 up to 60,000.")
+function multiplesofSix() {
+    var count = 0
+    var num = 6
+    while (num % 6 == 0 && num < 60000)
+    {
+        console.log(num);
+        num += 6;
+        count += 1;
+    }
+    console.log("There are " + count + " multiples of 6 between 6 and 60,000.")
 
-    };
+};
+    
+multiplesofSix();
  
 Counting, the Dojo Way
 Print integers 1 to 100. If divisible by 5, print "Coding" instead. If by 10, also print " Dojo".
