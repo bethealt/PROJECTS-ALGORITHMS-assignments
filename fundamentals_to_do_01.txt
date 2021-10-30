@@ -84,14 +84,46 @@ Write a function that determines whether a given year is a leap year. If a year 
 Print and Count
 Print all integer multiples of 5, from 512 to 4096. Afterward, also log how many there were.
 
+multiple - the product result of one number multiplied by another number.
+103 - 819
+
+    function printCount = {
+        for (var x = 103; x < 820; x++) {
+            console.log(x*5);
+        }
+    }
  
 Multiples of Six
 Print multiples of 6 up to 60,000, using a WHILE.
 
+    function multiplesofSix = {
+        var num = 1;
+        while (num < 10,001)
+        {
+            console.log(num * 6);
+            num += 1;
+        }
+        console.log("Whew, all multiples of 6 up to 60,000.")
+
+    };
  
 Counting, the Dojo Way
 Print integers 1 to 100. If divisible by 5, print "Coding" instead. If by 10, also print " Dojo".
 
+    function theDojoWay = {
+        for (var x = 1; x < 101; x++) {
+            console.log(x);
+        }
+        if (x /= 5 && % == 0) {
+            console.log("Coding")
+        }
+        else if (x /= 10 && % == 0) {
+            console.log("Dojo")
+        }
+        else {
+            console.log(x);
+        }
+    };
  
 What Do You Know?
 Your function will be given an input parameter incoming. Please console.log this value.
