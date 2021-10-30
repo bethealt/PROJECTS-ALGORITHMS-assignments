@@ -2,14 +2,16 @@ Setting and Swapping
 Set myNumber to 42. Set myName to your name. Now swap myNumber into myName & vice versa.
 
     var myNumber = 42
-    var myName = Tara
+    var myName = "Tara"
     myNumber = myName
     myName = myNumber
+    console.log(myNumber)
+    console.log(myName)
 
 Print -52 to 1066
 Print integers from -52 to 1066 using a FOR loop.
 
-    for (var x = -52; X < 1067; x+=)
+    for (var x = -52; x < 1067; x += 1)
     {
         console.log(x);
     }
@@ -17,28 +19,28 @@ Print integers from -52 to 1066 using a FOR loop.
 Don’t Worry, Be Happy
 Create beCheerful(). Within it, console.log string "good morning!" Call it 98 times.
 
-    function beCheerful = {
+    function beCheerful() {
             console.log("good morning!");
         }
 
-    beCheerful();*98
+    for (var i = 1; i < 99; i++) beCheerful(i);
 
 
 Multiples of Three – but Not All
 Using FOR, print multiples of 3 from -300 to 0. Skip -3 and -6.
 
-    for (var = -300; x < 1; x += 3) 
-    {
-        console.log(x);
-    }
-    if (x == -6)
-    {
-        continue
-    }
-    else (x == -3)
-    {
-        continue
-    };
+   for (var x = -300; x < 1; x += 3) {
+        if (x == -6)
+            {
+                continue;
+            }
+        else if (x == -3)
+            {
+                continue;
+            }
+    console.log(x);
+}
+    
 
 Printing Integers with While
 Print integers from 2000 to 5280, using a WHILE.
@@ -165,10 +167,10 @@ Log positive numbers starting at 2016, counting down by fours (exclude 0), witho
 Flexible Countdown
 Based on earlier “Countdown by Fours”, given lowNum, highNum, mult, print multiples of mult from highNum down to lowNum, using a FOR. For (2,9,3), print 9 6 3 (on successive lines).
 
-    function countdownFlexible(lowNum, ) {
-        var prod = mult * x;
+    function flexCountdown(lowNum, highNum, mult) {
         for (var x = highNum/mult; x > 0; x =-1) 
         {
+            var prod = mult * x;
             if (prod < highNum && prod > lowNum) 
             {
                 console.log("\n prod");
@@ -185,5 +187,8 @@ The Final Countdown
 This is based on “Flexible Countdown”. The parameter names are not as helpful, but the problem is essentially identical; don’t be thrown off! Given 4 parameters (param1,param2,param3,param4), print the multiples of param1, starting at param2 and extending to param3. One exception: if a multiple is equal to param4, then skip (don’t print) it. Do this using a WHILE. Given (3,5,17,9), print 6,12,15 (which are all of the multiples of 3 between 5 and 17, and excluding the value 9).
 
 
-
+function finalCountdown(param1,param2,param3,param4) {
+    
+    for (var x = param2; x < param)
+}
 
