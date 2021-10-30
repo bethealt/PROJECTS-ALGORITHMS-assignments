@@ -108,11 +108,15 @@ Print all integer multiples of 5, from 512 to 4096. Afterward, also log how many
 multiple - the product result of one number multiplied by another number.
 103 - 819
 
-    function printCount = {
-        for (var x = 103; x < 820; x++) {
-            console.log(x * 5);
+    var count = 0
+    for (var x = 515; x < 4095; x += 5) {
+        if (x % 5 == 0) {
+        console.log(x);
+        count += 1
         }
     }
+        console.log(count);
+
  
 Multiples of Six
 Print multiples of 6 up to 60,000, using a WHILE.
