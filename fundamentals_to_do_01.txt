@@ -139,20 +139,21 @@ multiplesofSix();
 Counting, the Dojo Way
 Print integers 1 to 100. If divisible by 5, print "Coding" instead. If by 10, also print " Dojo".
 
-    function theDojoWay = {
+    function theDojoWay() {
         for (var x = 1; x < 101; x++) {
-            console.log(x);
-        }
-        if (x /= 5 && % == 0) {
-            console.log("Coding")
-        }
-        else if (x /= 10 && % == 0) {
-            console.log("Dojo")
-        }
-        else {
-            console.log(x);
+            if (x % 10 == 0) {
+                console.log("Dojo")
+            }
+            else if (x % 5 == 0) {
+                console.log("Coding")
+            }
+            else {
+                console.log(x);
+            }
         }
     };
+
+    theDojoWay();
  
 What Do You Know?
 Your function will be given an input parameter incoming. Please console.log this value.
