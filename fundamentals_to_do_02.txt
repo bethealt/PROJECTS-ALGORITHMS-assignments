@@ -75,18 +75,25 @@ Print how many values this is.
 What will you do if the array is only one element long? Have an array with one value populated.
 
 function greaterSecondTwo(arr) {
-    arr_02 = [];
-    for (var i = 0, i < arr.length; i++) 
+    var arr_02 = [];
+    for (var i = 0; i < arr.length; i++) 
     {
-        if (arr[i]) > arr[1]) 
+        if (arr[i] > arr[1]) 
         {
-            x = arr[i]
+            var x = arr[i]
             arr_02.push(x);
         }
     }
-    console.log(arr_02.length);
+    console.log(`length: ` + arr_02.length);
+    console.log(arr_02);
     return arr_02;
 }
+
+greaterSecondTwo([1,3,5,7,9,13]);
+
+output:
+length: 4
+[ 5, 7, 9, 13 ]
 
 This Length, That Value
 Given two numbers, return array of length num1 with each value num2. Print "Jinx!" if they are same.
