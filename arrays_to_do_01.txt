@@ -51,6 +51,25 @@ Given an array, index, and additional value, insert the value into array at give
     insertAt([2,4,6], 1, 9);
     insertAt([ 19, 4, 7, 8, 65], 3, 17);
 
+1	function insertAt(arr, index, val) {
+2	  for (var i = arr.length - 1; i >= index; i--) {
+3	    arr[i+1] = arr[i];
+4	  }
+5	    arr[index] = val; 
+6	    console.log(arr);
+7	    return arr;
+8	  }
+
+    insertAt([4, 7, 8], 0, 19);
+    insertAt([2,4,6], 1, 9);
+    insertAt([ 19, 4, 7, 8, 65], 3, 17);
+
+    output:
+
+    [ 19, 4, 7, 8 ]
+    [ 2, 9, 4, 6 ]
+    [ 19, 4, 7, 17, 8, 65 ]
+
 Remove At (Bonus Challenge)
 Given an array and an index into array, remove and return the array value at that index. Do this without using built-in array methods except pop(). Think of popFront(arr) as equivalent to removeAt(arr,0).
 
