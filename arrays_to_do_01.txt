@@ -39,10 +39,43 @@ output:
 Insert At
 Given an array, index, and additional value, insert the value into array at given index. Do this without using built-in array methods. You can think of pushFront(arr,val) as equivalent to insertAt(arr,0,val).
 
+    function insertAt(arr, index, x) {
+        var arr2 = [];
+        arr2 = [x, ...arr];
+        var temp = arr2[index + 1];
+        arr2[index + 1] = x;
+        console.log(arr);
+    }
+    
+    insertAt([4, 7, 8], 0, 19);
+    insertAt([2,4,6], 1, 9);
+    insertAt([ 19, 4, 7, 8, 65], 3, 17);
 
 Remove At (Bonus Challenge)
 Given an array and an index into array, remove and return the array value at that index. Do this without using built-in array methods except pop(). Think of popFront(arr) as equivalent to removeAt(arr,0).
 
+function removeAt (arr, i) {
+    var temp = arr[i];
+    arr[i] = arr[arr.length-1];
+    arr[arr.length-1] = temp
+    arr.pop();
+    console.log(arr);
+    console.log(temp);
+    return temp;
+}
+
+removeAt([4, 7, 8], 0,);
+removeAt([2,4,6], 1);
+removeAt([ 19, 4, 7, 8, 65], 3);
+
+output:
+
+[ 8, 7 ]
+4
+[ 2, 6 ]
+4
+[ 19, 4, 7, 65 ]
+8
 
 Swap Pairs (Bonus Challenge)
 Swap positions of successive pairs of values of given array. If length is odd, do not change the final element. For [1,2,3,4], return [2,1,4,3]. For example, change input ["Brendan",true,42] to [true,"Brendan",42]. As with all array challenges, do this without using any built-in array methods.
