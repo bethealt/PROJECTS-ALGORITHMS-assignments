@@ -42,7 +42,7 @@
 
     front() {
         if(!self.head) {
-            headValue = self.head.value;
+            var headValue = self.head.value;
             return headValue;
         }
         return null;
