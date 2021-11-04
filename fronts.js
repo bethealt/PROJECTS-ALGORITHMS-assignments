@@ -2,8 +2,8 @@
 
 //CLASSES
     class Node {
-        constructor(data) {
-            this.data = data;
+        constructor(val) {
+            this.val = value;
             this.next = null;
         }
     }
@@ -16,21 +16,21 @@
 /*Write a method that accepts a value and create a new node, assign it to the list head, and return a pointer to the new head node.*/
 
     addFront(val) {
-       newHeadNode = new Node(val);
+       var newHeadNode = new Node(val);
        if(!self.head) {
            self.head = newHeadNode;
             return self;
        }
        newHeadNode.next=this.head;
        this.head = newHeadNode;
-       return newHeadNode;
+       return newHeadNode;      //return this
     }
  
 //Remove Front
 /*Write a method to remove the head node and return the new list head node. If the list is empty, return null.*/
 
     removeFront() {
-        newHeadNode = self.head.next;
+        var newHeadNode = self.head.next;
         if(!self.head) {
             self.head = newHeadNode;
         }
